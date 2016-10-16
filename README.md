@@ -14,52 +14,31 @@ MIS
 #2.数据库关系（ER图）
 ![](https://github.com/CUMTElite2014/Sun/blob/master/ER%E5%9B%BE.png) 
 #3.sql语句
-1.equ_type表（设备类别表)
-
-ET_id
-ET_name（设备类型名字)
-2.equ_content表（设备修理内容表）
-
-EC_id
-ET_id  （设备类别表ID）
-EC_content （设备修理内容）
-3.Equiment表（设备表）
+1.type表（设备类别表)
+  id
+  name（设备类型名字)
+2.content表（设备修理内容表）
+  id  设备ID
+  content 设备修理内容
+  Equiment表（设备表）
 
 Eid  自增长主键
 Enumber 设备型号
 ET_id（设备类别表ID）
-4.Check_Detail表（保修详情表）
-
-CD_id  自增长主键
-CD_group 小组名
-CD_person 检修人
-CD_type  检查类型（年检）
-CD_time  检查时间
-CD_explain 说明
+4.maintenance表（保修详情表）
+id  自增长主键
+group 小组名
+person 检修人
+type  检查类型（年检）
+time  检查时间
+explain 说明
 Eid         （设备表）外键
-CD_circle       年检之类的时间（年检填365）
-5.Check_Type（保修内容表）
-
-CT_id           自增长主键
-CT_content  检修内容
-CT_situaction  检修情况
-CT_note  备注
-Eid     （设备表）外键
-CD_id        （保修详情表）外键    
-6.Check_consume（保修消耗表）
-
-CC_id       自增长主键
-CD_id           （保修详情表）外键
-Eid         （设备表）外键
-CC_material  消耗材料名字
-CC_quantity  消耗材料数量
+circle       年检之类的时间（年检填365）
 SQL语句
-
 1.查询保修信息
-
-/*根据设备号查询保修信息*/
+*根据设备号查询保修信息*/
 /*（详情图1）*/
-select * from equipment,check_detail,check_type,check_consume
+select * from equipment,maintenance,type,consume
 where 
     equipment.Eid=(SELECT Eid from equipment where equipment.Enumber="1001")        
 and
