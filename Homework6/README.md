@@ -12,8 +12,8 @@ SQL查询语句
 ######SQL语句
     /*根据test1的用户ID和user表，查询对order中的sys_button的权限*/
     SELECT * FROM sys_button
-    WHERE sys_button.BtnID IN
-    (SELECT cf_privilege.PrivilegeAccessKey FROM cf_privilege
+    WHERE sys_button.ID IN
+    (SELECT u.PrivilegeAccessKey FROM u_privilege
 		WHERE cf_privilege.PrivilegeMaster='CF_User'
 		AND cf_privilege.PrivilegeMasterKey=
 		(SELECT cf_user.UserID FROM cf_user
