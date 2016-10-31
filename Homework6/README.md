@@ -90,4 +90,4 @@ SQL查询语句
     AND cf_privilege.PrivilegeOperation='Permit')
 
 # 查询结果
-![](https://github.com/wk09143787/wk233/blob/master/2.jpg)
+![](https://github.com/CUMTElite2014/Sun/blob/master/Homework6/%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C.jpg)
