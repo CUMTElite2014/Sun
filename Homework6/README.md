@@ -8,6 +8,6 @@ SQL查询语句
 #######逻辑过程
    IF 用户名=test1 存在 then  <br>
     	do	查询ID</br>
-    		根据ID和用户名查询用户对order中的sys_button的权限
+    		<br>根据ID和用户名查询用户对order中的sys_button的权限</br>
     else
     	do  结束查询
