@@ -4,8 +4,8 @@ SQL查询语句
 ------- 
 #####1.根据test1的用户ID和数据中的用户user表找出对应的用户，查询对订单(order)中的sys_button的权限
 ######逻辑过程
-    IF 用户名=test1的用户名或 用户ID=test1.ID存在 then
-    	do	查询用户
+     IF 用户名=test1 存在 then
+    	do	查询ID
     		根据ID和用户名查询用户对order中的sys_button的权限
     else
     	do  结束查询
