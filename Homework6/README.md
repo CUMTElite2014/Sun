@@ -21,7 +21,6 @@ SQL查询语句
 		AND cf_privilege.PrivilegeAccess='Sys_Button'
 		AND cf_privilege.PrivilegeOperation='Permit'
 		)
-![u-1](https://github.com/DeathKL/MIS/blob/master/Work6/u-1.png)
 
 #####2.根据test1的用户ID和user表，查询对Sys_menu的权限
 ######思路
@@ -43,7 +42,6 @@ SQL查询语句
 		AND cf_privilege.PrivilegeOperation='Permit'
 		)
 
-![u-2](https://github.com/DeathKL/MIS/blob/master/Work6/u-2.png)
 
 #####3.根据test1的角色ID和角色表，查询对Sys_menu的权限
 ######思路
@@ -68,8 +66,6 @@ SQL查询语句
     AND cf_privilege.PrivilegeAccess='Sys_Menu'
     AND cf_privilege.PrivilegeOperation='Permit')
 
-![r-1](https://github.com/DeathKL/MIS/blob/master/Work6/r-1.png)
-
 #####4.根据test1的角色ID和角色表，查询对order中的sys_button的权限
 ######思路
     IF 用户名=test1 存在 then
@@ -93,6 +89,5 @@ SQL查询语句
     AND cf_privilege.PrivilegeAccess='Sys_Button'
     AND cf_privilege.PrivilegeOperation='Permit')
 
-![r-2](https://github.com/DeathKL/MIS/blob/master/Work6/r-2.png)
 # 查询结果
 ![](https://github.com/wk09143787/wk233/blob/master/2.jpg)
