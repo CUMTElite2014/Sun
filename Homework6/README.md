@@ -2,11 +2,11 @@
 
 SQL查询语句
 ------- 
-#####1.根据test1的用户ID和user表，查询对order中的sys_button的权限
+#####1.根据test1的用户ID和用户名和数据库中对应的user表找出对应的用户，查询对order中的sys_button的权限
 ######逻辑过程
-    IF 用户名=test1 存在 then
-    	do	查询ID
-    		根据ID和用户名查询用户对order中的sys_button的权限
+    IF 用户名=test1 用户ID=test1.ID 为真 then
+    	do	查询用户
+    		根据查询到的用户查看用户的order中的sys_button的权限
     else
     	do  结束查询
 ######SQL语句
