@@ -23,7 +23,7 @@ SQL查询语句
 		)
 
 #####2.根据test1的用户ID和user表，查询对Sys_menu的权限
-######思路
+######逻辑过程
     IF 用户名=test1 存在 then
     	do	查询ID
     		根据ID和用户名查询用户对查询对Sys_menu的权限
@@ -44,7 +44,7 @@ SQL查询语句
 
 
 #####3.根据test1的角色ID和角色表，查询对Sys_menu的权限
-######思路
+######逻辑过程
      IF 用户名=test1 存在 then
     	do	查询ID
     		根据ID和用户名查询用户的角色ID
@@ -67,7 +67,7 @@ SQL查询语句
     AND cf_privilege.PrivilegeOperation='Permit')
 
 #####4.根据test1的角色ID和角色表，查询对order中的sys_button的权限
-######思路
+######逻辑过程
     IF 用户名=test1 存在 then
     	do	查询ID
     		根据ID和用户名查询用户的角色ID
